@@ -1,7 +1,7 @@
 import axios from "axios";
-require("dotenv").config();
+
 const API = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true, 
 });
 
